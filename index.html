@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="checkout.js" defer></script>
+
+
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--fontawsom-cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="container p-4">
+                    <div class="">
+                        <div class="row">
+                            <span>Try Neural Leap
+                            </span>
+                            <h1>
+                                7 days free
+                            </h1>
+                            <span>Then $27,000.00 every 3 months
+                            </span>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="./img/n-p7.png" alt="">
+                            </div>
+                            <div class="col-6">
+                                <h5>Neural Leap</h5>
+                                <p class="text-muted"><small>By paying you agree to the terms and conditions outlined
+                                        here on our website: https://www.neuralleap.ai/terms-and-conditions</small></p>
+                                <div class="row">
+
+                                    <div class="input-group mb-2">
+                                        <!-- <input type="text" class="form-control" aria-label="Text input with dropdown button"> -->
+                                        <!-- <button class="btn btn-outline-secondary dropdown-toggle border-0 .bg-light"
+                                            type="button" data-bs-toggle="dropdown" aria-expanded="false">Qty</button> -->
+                                        <!-- <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">1</a></li>
+                                            <li><a class="dropdown-item" href="#">2</a></li>
+
+                                        </ul> -->
+                                        <label for="numbers">Quantity</label>
+                                       <select id="numbers" name="numbers">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="row">
+                                    <h6>7 days free</h6>
+                                </div>
+                                <br> <br> <br> <br> <br>
+                                <div class="row">
+                                    <p class="text-muted"><small>$27,000.00 / 3 months after</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container p-4">
+                    <div class="">
+                        <form id="payment-form">
+                            <div id="payment-element">
+                                <!--Stripe.js injects the Payment Element-->
+                            </div>
+                            <button id="submit">
+                                <div class="spinner hidden" id="spinner"></div>
+                                <span id="button-text">Pay now</span>
+                            </button>
+                            <div id="payment-message" class="hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script>
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     // Get the select element
+    //     var selectElement = document.getElementById('numbers');
+       
+    //     // Add a change event listener to the select element
+    //     selectElement.addEventListener('change', function () {
+    //         // Get the selected value and log it to the console (you can replace this with your desired logic)
+    //         var selectedValue=1
+    //          selectedValue = selectElement.value;
+    //         console.log('Selected Value:', selectedValue);
+    //         initialize(selectedValue)
+           
+    //     });
+    // });
+</script>
+
+</body>
+
+</html>
