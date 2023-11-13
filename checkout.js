@@ -63,7 +63,7 @@ async function handleSubmit(e) {
     elements,
     confirmParams: {
       // Make sure to change this to your payment completion page
-      return_url: "http://localhost:4242/",
+      return_url: "https://stripefrnt.netlify.app/",
       receipt_email: 'vimuthtweet@gmail.com',
     },
   });
